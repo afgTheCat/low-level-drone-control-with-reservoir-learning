@@ -1,0 +1,12 @@
+[package]
+name = "flight_controller"
+version = "0.1.0"
+edition = "2021"
+resolver = "2"
+
+[build-dependencies]
+bindgen = "0.70.1"
+
+[dependencies]
+libc = "0.2.169"
+serde.workspace = true

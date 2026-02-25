@@ -1,0 +1,21 @@
+[package]
+name = "visualizer"
+version = "0.1.0"
+edition = "2021"
+resolver = "2"
+
+[dependencies]
+nalgebra.workspace = true
+flight_controller.workspace = true
+bevy = { version = "0.16.1" }
+bevy_egui = "0.34.0"
+bevy_infinite_grid = "0.15.0"
+bevy_panorbit_camera = "0.26.0"
+egui_extras = "0.31.1"
+uuid.workspace = true
+simulator.workspace = true
+sim_context.workspace = true
+
+[features]
+default = []
+noise = []

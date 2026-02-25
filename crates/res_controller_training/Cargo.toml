@@ -1,0 +1,22 @@
+[package]
+name = "res_controller_training"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+sim_context.workspace = true
+res_controller.workspace = true
+flight_controller.workspace = true
+res.workspace = true
+ridge.workspace = true
+nalgebra.workspace = true
+loggers.workspace = true
+simulator.workspace = true
+drone.workspace = true
+loaders.workspace = true
+bf_controller.workspace = true
+serde.workspace = true
+rayon = "1.11.0"
+itertools = "0.14.0"
+serde_json.workspace = true
+rand.workspace = true

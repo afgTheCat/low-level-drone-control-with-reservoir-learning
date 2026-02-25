@@ -1,0 +1,7 @@
+**/target
+# **/*.csv
+data.sqlite
+# assets
+# **/*.so
+**/*.pyc
+__pycache__

@@ -1,0 +1,16 @@
+[package]
+name = "sim_context"
+version = "0.1.0"
+edition = "2021"
+resolver = "2"
+
+[dependencies]
+simulator.workspace = true
+flight_controller.workspace = true
+uuid.workspace = true
+rand.workspace = true
+drone.workspace = true
+loaders.workspace = true
+loggers.workspace = true
+res_controller.workspace = true
+bf_controller.workspace = true

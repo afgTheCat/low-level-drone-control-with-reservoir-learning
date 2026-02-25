@@ -1,0 +1,60 @@
+[workspace]
+members = [
+  "crates/visualizer",
+  "crates/simulator",
+  "crates/sim_context",
+  "crates/flight_controller",
+  "crates/res",
+  "crates/ridge",
+  "crates/drone",
+  "crates/loggers",
+  "crates/loaders", 
+  "crates/res_controller",
+  "crates/res_controller_training", 
+  "crates/bf_controller", 
+  "crates/mse", 
+  "crates/macros"
+]
+resolver = "2"
+
+[workspace.dependencies]
+# internal
+visualizer = { path = "crates/visualizer" }
+simulator = { path = "crates/simulator" }
+sim_context = { path = "crates/sim_context" }
+flight_controller = { path = "crates/flight_controller" }
+res = { path = "crates/res" }
+ridge = { path = "crates/ridge" }
+drone = { path = "crates/drone" }
+loggers = { path = "crates/loggers" }
+loaders = { path = "crates/loaders" }
+res_controller = { path = "crates/res_controller" }
+bf_controller = { path = "crates/bf_controller" }
+macros = { path = "crates/macros" }
+
+
+# external
+nalgebra = { version = "0.33.0", features = ["serde-serialize"] } 
+toml = "0.8.19"
+csv = "1.3.1"
+rusqlite = { version = "0.32.1", features = ["bundled"] }
+uuid = {version = "1.11.0", features = ["v4", "fast-rng"] }
+rerun = "0.23.3"
+log = "0.4.25"
+serde = { version = "1.0.228", features = ["derive"] } 
+derive_more = { version = "1.0.0", features = ["full"] }
+rand = "0.8.5"
+serde_json = "1.0.145"
+smol = "2.0.2"
+futures = "0.3.31"
+
+# Enable a small amount of optimization in the dev profile.
+[profile.dev]
+opt-level = 1
+
+[profile.release]
+debug = 1
+
+# Enable a large amount of optimization in the dev profile for dependencies.
+[profile.dev.package."*"]
+opt-level = 3

@@ -1,0 +1,11 @@
+[package]
+name = "drone"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+serde.workspace = true
+nalgebra.workspace = true
+derive_more.workspace = true
+flight_controller.workspace = true
+rand.workspace = true

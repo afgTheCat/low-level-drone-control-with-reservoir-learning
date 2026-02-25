@@ -1,0 +1,22 @@
+[package]
+name = "simulator"
+version = "0.1.0"
+edition = "2021"
+resolver = "2"
+
+[dependencies]
+rerun.workspace = true
+rand = "0.8.5"
+nalgebra.workspace = true
+flight_controller.workspace = true
+serde.workspace = true
+uuid.workspace = true
+drone.workspace = true
+rayon = "1.10.0"
+derive_more.workspace = true
+loggers.workspace = true
+
+[features]
+default = []
+noise = []
+temp = []
