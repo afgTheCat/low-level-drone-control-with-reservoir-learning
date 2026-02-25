@@ -5794,13 +5794,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "mse"
-version = "0.1.0"
-dependencies = [
- "nalgebra",
-]
-
-[[package]]
 name = "naga"
 version = "24.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"

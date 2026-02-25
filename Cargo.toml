@@ -12,7 +12,6 @@ members = [
   "crates/res_controller",
   "crates/res_controller_training", 
   "crates/bf_controller", 
-  "crates/mse", 
   "crates/macros"
 ]
 resolver = "2"
